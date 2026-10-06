@@ -1,1 +1,29 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Panel | Media Upload</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="glass-card">
+            <h1>Owner Panel</h1>
+            <form id="upload-form">
+                <select id="file-type" required>
+                    <option value="" disabled selected>Select Media Type</option>
+                    <option value="password_video">Password Video</option>
+                    <option value="intro_video">Intro Video</option>
+                    <option value="core_video">Core Video</option>
+                </select>
+                <input type="file" id="file-input" accept="video/*, audio/*" required>
+                <button type="submit" class="premium-btn">Upload</button>
+            </form>
+            <p id="status-msg"></p>
+        </div>
+    </div>
+    <script src="js/upload.js"></script>
+</body>
+</html>
