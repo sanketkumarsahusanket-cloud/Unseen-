@@ -17,7 +17,7 @@ async function fetchVideoUrl() {
         .single();
 
     if (error) {
-        console.error('Error fetching video:', error.message);
+        "alert(error.message);"
         return;
     }
 
